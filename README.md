@@ -7,6 +7,7 @@ RL88 on the BangNull discord server left a file and hint for members to solve.  
 3. Last step was just a matter of determining how many times the flag was encoded.  Cyberchef *agreed* that it was encoded in base64 and by clicking on the “wand” button, it began to add “from base64” to the recipe. The *hint* confirmed it was encoded 15 times. I added “convert to base64” fifteen times, it worked!
 
 ![NCL Challenge](/ncl.JPG)
+________________________________________________
 
 CVE: 2015-3440
 
