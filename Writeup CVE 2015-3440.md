@@ -1,0 +1,15 @@
+# Codepathwriteup
+## CVE: 2015-3440 
+
+CVE: 2015-3440
+
+By using JavaScript in the comments, an attacker can inject a script that is executed when the comment is viewed.  The comment had to be larger than 64kb to overflow the buffer and run.
+
+Leave a comment to bypass the initial moderation.  Once the admin approves that comment, the subsequent comments left are also approved.
+Creating a script with 64kb of “A” was a little bit of a challenge.  I started by opening a notepad and using the col count to create 1100 “A”s, which I trippled to get 3300, then I doubled that to get 6600.  The last step was to multiply that by ten to get 66,000 A’s.
+The comment with the script is as follows -
+<a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAA64kbAA
+'></a>
+I entered the script into the comment and got this -
+
+![CVE2015-3440](/wordpressbroke.JPG)
